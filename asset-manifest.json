@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/teskofrontend/static/css/main.6382bfbb.css",
+    "main.js": "/teskofrontend/static/js/main.61ce4134.js",
+    "static/media/p2.jpeg": "/teskofrontend/static/media/p2.f0c24411a635f6a722d5.jpeg",
+    "static/media/p5.jpeg": "/teskofrontend/static/media/p5.c7c0fb9b357ac9552c71.jpeg",
+    "static/media/sa3.jpeg": "/teskofrontend/static/media/sa3.c46bc4bed8cdcb4b8b8e.jpeg",
+    "static/media/p4.jpeg": "/teskofrontend/static/media/p4.0e8830a77d47040ae0e0.jpeg",
+    "static/media/p6.jpeg": "/teskofrontend/static/media/p6.e5e37a5c8edb58685b7c.jpeg",
+    "static/media/sh3.jpeg": "/teskofrontend/static/media/sh3.ecb2a01d5adf0a267c28.jpeg",
+    "static/media/sa2.jpeg": "/teskofrontend/static/media/sa2.7e24d13ecc067d5c61b3.jpeg",
+    "static/media/p9.jpeg": "/teskofrontend/static/media/p9.189aa118967e2680fd46.jpeg",
+    "static/media/sa1.jpeg": "/teskofrontend/static/media/sa1.d8060dd38a849d1ee8a1.jpeg",
+    "static/media/sh1.jpeg": "/teskofrontend/static/media/sh1.d558a98ed9779d79d5da.jpeg",
+    "static/media/sh2.jpeg": "/teskofrontend/static/media/sh2.47ed289991140bad865e.jpeg",
+    "static/media/p3.jpeg": "/teskofrontend/static/media/p3.391a19947988f4452243.jpeg",
+    "static/media/p10.jpeg": "/teskofrontend/static/media/p10.45c661eca59f6f1bfe56.jpeg",
+    "static/media/s2.jpeg": "/teskofrontend/static/media/s2.7341ae5fc93ebb1096e0.jpeg",
+    "static/media/s3.jpeg": "/teskofrontend/static/media/s3.28a6d146292b248315b3.jpeg",
+    "static/media/p7.jpeg": "/teskofrontend/static/media/p7.b8e85b97d5a9414aa8a9.jpeg",
+    "static/media/p8.jpeg": "/teskofrontend/static/media/p8.722698763829fffcaf04.jpeg",
+    "static/media/s4.jpeg": "/teskofrontend/static/media/s4.3bb889b6c0ba6158a66d.jpeg",
+    "static/media/redux.cjs": "/teskofrontend/static/media/redux.7edfc461ab353f1712ab.cjs",
+    "index.html": "/teskofrontend/index.html",
+    "main.6382bfbb.css.map": "/teskofrontend/static/css/main.6382bfbb.css.map",
+    "main.61ce4134.js.map": "/teskofrontend/static/js/main.61ce4134.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6382bfbb.css",
+    "static/js/main.61ce4134.js"
+  ]
+}
