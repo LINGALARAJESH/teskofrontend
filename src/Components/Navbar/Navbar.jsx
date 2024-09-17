@@ -54,7 +54,7 @@ const Navbar = () => {
             <li onClick={closeMenu}><div className="icon"><Link className="micon" style={{textDecoration:"none"}} to="/products"><i className="fa-solid fa-shirt"></i>Products</Link></div></li>
             {userInfo&& <li onClick={closeMenu}><div className="icon"><Link className="micon" style={{textDecoration:"none"}} to="/myorders"><i className="fa-solid fa-list"></i>Myorders</Link></div></li>}
             <li onClick={closeMenu}><div className="icon"><a className="micon" style={{textDecoration:"none"}} href="#aboutus"><i className="fa-solid fa-address-card"></i>About us</a></div></li>
-            <li onClick={closeMenu}><div className="icon"><Link className="micon" style={{textDecoration:"none"}} to="/contact"><i className="fa-solid fa-phone"></i>Contact</Link></div></li>
+            <li onClick={closeMenu}><div className="icon"><Link className="micon" style={{textDecoration:"none"}}  to="/contact"><i className="fa-solid fa-phone"></i>Contact</Link></div></li>
             {userInfo&& <li onClick={closeMenu}><div className="icon"><Link className="micon" style={{textDecoration:"none"}} to="/Cart"><i className="fa-solid fa-cart-shopping"></i>Mycart</Link></div></li>}
             
             <div className="buttondata">
