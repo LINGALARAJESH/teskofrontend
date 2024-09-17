@@ -16,7 +16,7 @@ const Myorders = () => {
   const getOrdersData = async (userInfo) => {
     try {
     
-      const { data } = await axios.get(`http://127.0.0.1:8000/api/users/allorders/${userInfo.id}/`);
+      const { data } = await axios.get(`https://teskoodude.pythonanywhere.com/api/users/allorders/${userInfo.id}/`);
       setMyOrderInfo(data)
     } catch (error) {
       console.log(error);
@@ -132,7 +132,7 @@ const Myorders = () => {
                 {safeParse(item.cartItems).map((dataitem) => (
                   <div className="productdetail1" key={dataitem._id}>
                     <div className="productimage1">
-                      <img src={`http://127.0.0.1:8000/${dataitem.image}`} alt="" />
+                      <img src={`https://teskoodude.pythonanywhere.com/${dataitem.image}`} alt="" />
                     </div>
                     <div className="productdata">
                       <ul>

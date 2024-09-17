@@ -45,7 +45,7 @@ const submitHandler= async (e)=>{
                 'Content-type': 'application/json'
             }
         }
-        const { data } = await axios.post(`http://127.0.0.1:8000/api/users/set-new-password/${uidb64}/${token}}`,
+        const { data } = await axios.post(`https://teskoodude.pythonanywhere.com/api/users/set-new-password/${uidb64}/${token}}`,
         {
             uidb64:uidb64,
             token:token,
