@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Contact.css"
+
 const Contact = () => {
   return (
     <>
-    <h1>HAI</h1>
-    {/* <div>
+    <div>
       <section id="page-header" className="about-header">
         <h2>#let's_talk</h2>
         <p>LEAVE A MESSAGE, We love to hear from you!</p>
@@ -84,7 +84,7 @@ const Contact = () => {
           <button className="normaldd">Sign up</button>
         </div>
       </section>
-    </div> */}
+    </div>
   </>
   )
 }
