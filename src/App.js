@@ -35,7 +35,7 @@ function App() {
           <Route path="/Payment" element={<Payment/>} />
           <Route path="/paypal-success" element={<Home />} />
           <Route path="/paypal-cancel" element={<Home />} />
-          <Route path="/Contact" element={<Contactdata />} />
+          <Route path="/contact" element={<Contactdata />} />
           <Route path="/reset" element={<Reset/>} />
           <Route path="/api/users/set-new-password/:uidb64/:token" element={<PasswordReset/>} />
         </Routes>
