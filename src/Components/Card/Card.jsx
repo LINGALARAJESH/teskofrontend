@@ -9,7 +9,7 @@ const Card = ({ prods }) => {
         <Link to={`/displayproduct/${prods._id}`}>
           <img
             onClick={window.scrollTo(0, 0)}
-            src={`https://teskoodude.pythonanywhere.com/${prods.image}`}
+            src={`http://127.0.0.1:8000/${prods.image}`}
             alt=""
           />
         </Link>

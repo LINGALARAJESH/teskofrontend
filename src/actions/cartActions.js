@@ -10,14 +10,14 @@ export const addToCart = (id, productId, qty, size) => async (dispatch, getState
 
     try {
         dispatch({ type: CART_ADD_REQUEST })
-        const { data: singledata } = await axios.get(`https://teskoodude.pythonanywhere.com/api/products/${productId}`)
+        const { data: singledata } = await axios.get(`http://127.0.0.1:8000/api/products/${productId}`)
 
         const config = {
             headers: {
                 'Content-type': 'application/json'
             }
         }
-        const { data } = await axios.post("https://teskoodude.pythonanywhere.com/api/users/addcartdata/",
+        const { data } = await axios.post("http://127.0.0.1:8000/api/users/addcartdata/",
             {
                 userid: id,
                 id: productId,
@@ -51,7 +51,7 @@ export const addToCart = (id, productId, qty, size) => async (dispatch, getState
 export const getDataCart = (userid) => async (dispatch, getState) => {
     try {
         dispatch({ type:CART_ADD_REQUEST })
-        const { data } = await axios.get(`https://teskoodude.pythonanywhere.com/api/users/addcartdata/${userid}`)
+        const { data } = await axios.get(`http://127.0.0.1:8000/api/users/addcartdata/${userid}`)
 
         dispatch({
             type: CART_ADD_ITEM,
@@ -104,7 +104,7 @@ export const proceedCartOrder = (userid, total_items, cartItems, mobile, address
                 'Content-type': 'application/json'
             }
         }
-        const { data } = await axios.post("https://teskoodude.pythonanywhere.com/api/users/proceedcartorder/",
+        const { data } = await axios.post("http://127.0.0.1:8000/api/users/proceedcartorder/",
             {
                 user: userid,
                 totalPrice: total_items,
@@ -129,7 +129,7 @@ export const proceedCartOrder = (userid, total_items, cartItems, mobile, address
    
         dispatch({ type:SHIPPINGORDER_ADD_REQUEST })
     
-        const Shippingdata = await axios.post("https://teskoodude.pythonanywhere.com/api/users/shippingcartdata/",
+        const Shippingdata = await axios.post("http://127.0.0.1:8000/api/users/shippingcartdata/",
             {
                 orderid: data[0]['_id'],
                 mobile: mobile,
@@ -154,7 +154,7 @@ export const proceedCartOrder = (userid, total_items, cartItems, mobile, address
         // products adiing in models
         dispatch({ type:ORDERITEM_ADD_REQUEST })
 
-        const Productdata = await axios.post("https://teskoodude.pythonanywhere.com/api/users/OrderProductdata/",
+        const Productdata = await axios.post("http://127.0.0.1:8000/api/users/OrderProductdata/",
             {
                 product: cartItems,
                 user: userid,

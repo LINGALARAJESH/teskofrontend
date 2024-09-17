@@ -8,7 +8,7 @@ export const  addShippingData =(orderid,mobile,address,city,postalcode,country)=
             'Content-type':'application/json'
         }
     }
-    const {data}=await axios.post("https://teskoodude.pythonanywhere.com/api/users/shippingcartdata/",
+    const {data}=await axios.post("http://127.0.0.1:8000/api/users/shippingcartdata/",
         {  
             orderid:orderid,
             mobile:mobile,
@@ -23,7 +23,7 @@ export const  addShippingData =(orderid,mobile,address,city,postalcode,country)=
 
     
 
-    const {Shippingdata}=await axios.post("https://teskoodude.pythonanywhere.com/api/users/shippingcartdata/",
+    const {Shippingdata}=await axios.post("http://127.0.0.1:8000/api/users/shippingcartdata/",
         {  
             orderid:data._id,
             mobile:mobile,

@@ -46,7 +46,7 @@ const RazorayPay = () => {
       };
   
       const { data } = await axios.patch(
-        `https://teskoodude.pythonanywhere.com/api/users/proceedcartorder/${orderid}/`,
+        `http://127.0.0.1:8000/api/users/proceedcartorder/${orderid}/`,
         {
           paymentMethod: "RazorPay",
           taxPrice: 0,
@@ -93,7 +93,7 @@ const RazorayPay = () => {
       };
   
       const { data } = await axios.patch(
-        `https://teskoodude.pythonanywhere.com/api/users/proceedcartorder/${orderid}/`,
+        `http://127.0.0.1:8000/api/users/proceedcartorder/${orderid}/`,
         {
           paymentMethod: "RazorPay",
           taxPrice: 0,
@@ -133,7 +133,7 @@ const RazorayPay = () => {
         },
       };
       const response = await axios.post(
-        'https://teskoodude.pythonanywhere.com/api/users/rzporder/complete/',
+        'http://127.0.0.1:8000/api/users/rzporder/complete/',
         {
                 "payment_id": razorpay_payment_id,
                 "order_id": razorpay_order_id,
@@ -156,7 +156,7 @@ const RazorayPay = () => {
       };
     
       const response = await axios.post(
-        'https://teskoodude.pythonanywhere.com/api/users/rzporder/create/',
+        'http://127.0.0.1:8000/api/users/rzporder/create/',
         {
           amount: totalCartPrice*100,
           currency: 'INR',
