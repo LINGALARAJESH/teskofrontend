@@ -68,24 +68,24 @@ const Displayproduct = () => {
 
 <section id="prodetails" className="section-p1">
 <div className="single-pro-image">
-<div className="imgg"><img width="100%" src={ `http://127.0.0.1:8000/${product.image}`}  id="Mainimg" alt="" /></div>
+<div className="imgg"><img width="100%" src={ `https://teskoodude.pythonanywhere.com/${product.image}`}  id="Mainimg" alt="" /></div>
 <div className="small-img-group">
     <div className="small-img-col">
       
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`http://127.0.0.1:8000/${mainproducts[1].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[1].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`http://127.0.0.1:8000/${mainproducts[2].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[2].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`http://127.0.0.1:8000/${mainproducts[3].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[3].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`http://127.0.0.1:8000/${mainproducts[4].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[4].image}`} alt="" />)}
     </div>
 </div>
 </div> 

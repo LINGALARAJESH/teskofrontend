@@ -14,7 +14,7 @@ export const login=(email,password)=>async(dispatch)=>{
                 'Content-type':'application/json'
             }
         }
-        const {data}=await axios.post("http://127.0.0.1:8000/api/users/login/",
+        const {data}=await axios.post("https://teskoodude.pythonanywhere.com/api/users/login/",
             {'username':email,
              'password':password
             },
@@ -58,7 +58,7 @@ export const register=(Firstname,Lastname,email,password)=>async(dispatch)=>{
                 'Content-type':'application/json'
             }
         }
-        const {data}=await axios.post("http://127.0.0.1:8000/api/users/register/",
+        const {data}=await axios.post("https://teskoodude.pythonanywhere.com/api/users/register/",
             {'fname':Firstname,
              'lname':Lastname,
              'email':email,

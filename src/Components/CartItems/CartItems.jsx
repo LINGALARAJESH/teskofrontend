@@ -104,7 +104,7 @@ const CardItems = () => {
                   <div>
                     <div className="cartitems-format cartitems-format-main">
                       <img
-                        src={`http://127.0.0.1:8000/${item.image}`}
+                        src={`https://teskoodude.pythonanywhere.com/${item.image}`}
                         alt=""
                         className="cartitems-produdct-icon"
                       />
