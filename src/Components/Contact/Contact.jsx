@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="details">
           <span>GET IN TOUCH</span>
           <h2>Visit one of Tesko Dude for good products or contact us today.</h2>
-          <h3>Head Office</h3>
+          <h3>Head Office </h3>
           <div>
             <li>
               <i className="bi bi-geo-alt-fill"></i>
