@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import { useParams } from 'react-router-dom'
 import "./Displayproduct.css"
 import Breadcrums from '../../Components/Breadcrums/Breadcrums'
@@ -23,17 +23,20 @@ const Displayproduct = () => {
 
 
   useEffect(()=>{
-
+    console.log(`Dispatching listProductDetails...}`);
     dispatch((listProducts()));
  },[dispatch])
  
 
   const {id}=useParams()
-  
+  console.log(id)
+
   const productDetails=useSelector((state)=>state.productDetails);
+  console.log(productDetails)
   const {error,loading,product}=productDetails;
 
   useEffect(() => {
+    console.log(`Dispatching listProductDetails...${id}`);
     dispatch((listProductDetails(id)));
   }, [dispatch,id]);
 
@@ -47,9 +50,10 @@ const Displayproduct = () => {
 
 
   const productList=useSelector((state)=>state.productList);
-  const products=productList.product;
-  extraitems()
-  
+    const products=productList.product;
+    extraitems()
+    console.log("Hellow world")
+    console.log(products)
 
     
   
@@ -58,7 +62,7 @@ const Displayproduct = () => {
     userInfo ? navigate(`/Cart/${id}?qty=${qty}=size=${size}`):navigate(`/login`)
   }
 
-console.log(mainproducts)
+
 
   return (
     <>
@@ -67,8 +71,8 @@ console.log(mainproducts)
     ):error ? ( <Message variant='danger'>{error}</Message>):( 
 
 <section id="prodetails" className="section-p1">
-<div className="single-pro-image">      
-<div className="imgg"><img width="100%"   src={`https://teskoodude.pythonanywhere.com/static/images/${product.image}`}  id="Mainimg" alt="" /></div>
+<div className="single-pro-image">
+<div className="imgg"><img width="100%" src={ `https://teskoodude.pythonanywhere.com/static/images/${product.image}`}  id="Mainimg" alt="" /></div>
 <div className="small-img-group">
     <div className="small-img-col">
       
@@ -81,10 +85,10 @@ console.log(mainproducts)
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[3].image}`} alt=""  />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[3].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
-    {mainproducts.length > 1 && (               
+    {mainproducts.length > 1 && (
   <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[4].image}`} alt="" />)}
     </div>
 </div>
@@ -104,7 +108,7 @@ console.log(mainproducts)
 <div>
 <select className='selectsize' name="" id=""  value={size} onChange={(e)=>setsize(e.target.value)}>
     <option value=""> Select Size</option>
-    <option className='selectsize' value="S">S</option>
+    <option className='selectsize' value="">S</option>
     <option className='selectsize' value="L">L</option>
     <option className='selectsize' value="XL">XL</option>
     <option className='selectsize' value="XXL">XXL</option>
