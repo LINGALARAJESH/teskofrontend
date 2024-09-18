@@ -46,7 +46,7 @@ const Payment = () => {
               <tr key={item._id}>
                 <td>{item.order}</td>
                 <td>
-                  <img src={`https://teskoodude.pythonanywhere.com/${item.image}`} alt="" />
+                  <img src={`https://teskoodude.pythonanywhere.com/static/images/${item.image}`} alt="" />
                 </td>
                 <td>{item.name}</td>
                 <td>{item.price}</td>
