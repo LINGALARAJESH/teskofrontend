@@ -33,6 +33,13 @@ const Displayproduct = () => {
   const productDetails=useSelector((state)=>state.productDetails);
   const {error,loading,product}=productDetails;
 
+  console.log(product.image)
+  console.log(mainproducts[1].image)
+  console.log(mainproducts[2].image)
+  console.log(mainproducts[3].image)
+  console.log(mainproducts[4].image)
+  console.log(mainproducts[5].image)
+
   useEffect(() => {
     dispatch((listProductDetails(id)));
   }, [dispatch,id]);
@@ -65,6 +72,7 @@ const Displayproduct = () => {
      {loading?(
       <Loader/>
     ):error ? ( <Message variant='danger'>{error}</Message>):( 
+
 
 <section id="prodetails" className="section-p1">
 <div className="single-pro-image">
