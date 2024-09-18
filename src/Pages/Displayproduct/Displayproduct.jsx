@@ -33,12 +33,6 @@ const Displayproduct = () => {
   const productDetails=useSelector((state)=>state.productDetails);
   const {error,loading,product}=productDetails;
 
-  console.log(product.image)
-  console.log(mainproducts[1].image)
-  console.log(mainproducts[2].image)
-  console.log(mainproducts[3].image)
-  console.log(mainproducts[4].image)
-  console.log(mainproducts[5].image)
 
   useEffect(() => {
     dispatch((listProductDetails(id)));
@@ -65,7 +59,9 @@ const Displayproduct = () => {
     userInfo ? navigate(`/Cart/${id}?qty=${qty}=size=${size}`):navigate(`/login`)
   }
 
-
+  console.log(products)
+  console.log(product)
+  console.log(mainproducts)
 
   return (
     <>
