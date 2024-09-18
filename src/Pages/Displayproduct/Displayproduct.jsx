@@ -33,7 +33,6 @@ const Displayproduct = () => {
   const productDetails=useSelector((state)=>state.productDetails);
   const {error,loading,product}=productDetails;
 
-
   useEffect(() => {
     dispatch((listProductDetails(id)));
   }, [dispatch,id]);
@@ -59,33 +58,34 @@ const Displayproduct = () => {
     userInfo ? navigate(`/Cart/${id}?qty=${qty}=size=${size}`):navigate(`/login`)
   }
 
+
+
   return (
     <>
      {loading?(
       <Loader/>
     ):error ? ( <Message variant='danger'>{error}</Message>):( 
 
-
 <section id="prodetails" className="section-p1">
 <div className="single-pro-image">
-<div className="imgg"><img width="100%" src={ `https://teskoodude.pythonanywhere.com/static/images/${product.image}`}  id="Mainimg" alt="" /></div>
+<div className="imgg"><img width="100%" src={ `https://teskoodude.pythonanywhere.com/${product.image}`}  id="Mainimg" alt="" /></div>
 <div className="small-img-group">
     <div className="small-img-col">
       
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[1].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[1].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[2].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[2].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[3].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[3].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[4].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/${mainproducts[4].image}`} alt="" />)}
     </div>
 </div>
 </div> 
