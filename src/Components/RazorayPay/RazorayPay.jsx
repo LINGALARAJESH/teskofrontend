@@ -158,7 +158,7 @@ const RazorayPay = () => {
       const response = await axios.post(
         'https://teskoodude.pythonanywhere.com/api/users/rzporder/create/',
         {
-          amount: totalCartPrice,
+          amount: totalCartPrice*100,
           currency: 'INR',
         },
         config
