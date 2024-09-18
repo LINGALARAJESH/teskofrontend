@@ -90,7 +90,7 @@ const Displayproduct = () => {
     <div className="small-img-col">
     {mainproducts.length > 1 && (
   <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[4].image}`} alt="" />)}
-    </div>
+  </div>
 </div>
 </div> 
 <div className="single-pro-details">
