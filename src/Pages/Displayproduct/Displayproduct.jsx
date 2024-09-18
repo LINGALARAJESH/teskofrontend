@@ -59,10 +59,6 @@ const Displayproduct = () => {
     userInfo ? navigate(`/Cart/${id}?qty=${qty}=size=${size}`):navigate(`/login`)
   }
 
-  console.log(products)
-  console.log(product)
-  console.log(mainproducts)
-
   return (
     <>
      {loading?(
