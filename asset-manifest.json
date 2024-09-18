@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/teskofrontend/static/css/main.6382bfbb.css",
-    "main.js": "/teskofrontend/static/js/main.c7856f99.js",
+    "main.js": "/teskofrontend/static/js/main.cc92ac1e.js",
     "static/media/p2.jpeg": "/teskofrontend/static/media/p2.f0c24411a635f6a722d5.jpeg",
     "static/media/p5.jpeg": "/teskofrontend/static/media/p5.c7c0fb9b357ac9552c71.jpeg",
     "static/media/sa3.jpeg": "/teskofrontend/static/media/sa3.c46bc4bed8cdcb4b8b8e.jpeg",
@@ -23,10 +23,10 @@
     "static/media/redux.cjs": "/teskofrontend/static/media/redux.7edfc461ab353f1712ab.cjs",
     "index.html": "/teskofrontend/index.html",
     "main.6382bfbb.css.map": "/teskofrontend/static/css/main.6382bfbb.css.map",
-    "main.c7856f99.js.map": "/teskofrontend/static/js/main.c7856f99.js.map"
+    "main.cc92ac1e.js.map": "/teskofrontend/static/js/main.cc92ac1e.js.map"
   },
   "entrypoints": [
     "static/css/main.6382bfbb.css",
-    "static/js/main.c7856f99.js"
+    "static/js/main.cc92ac1e.js"
   ]
 }
