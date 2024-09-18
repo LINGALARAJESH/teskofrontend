@@ -47,8 +47,8 @@ const Displayproduct = () => {
 
 
   const productList=useSelector((state)=>state.productList);
-    const products=productList.product;
-    extraitems()
+  const products=productList.product;
+  extraitems()
   
 
     
@@ -58,7 +58,7 @@ const Displayproduct = () => {
     userInfo ? navigate(`/Cart/${id}?qty=${qty}=size=${size}`):navigate(`/login`)
   }
 
-
+console.log(mainproducts)
 
   return (
     <>
@@ -67,25 +67,25 @@ const Displayproduct = () => {
     ):error ? ( <Message variant='danger'>{error}</Message>):( 
 
 <section id="prodetails" className="section-p1">
-<div className="single-pro-image">
-<div className="imgg"><img width="100%" src={ `https://teskoodude.pythonanywhere.com/static/images/kutha_Mens1.jpeg`}  id="Mainimg" alt="" /></div>
+<div className="single-pro-image">      
+<div className="imgg"><img width="100%"   src={`https://teskoodude.pythonanywhere.com/static/images/${product.image}`}  id="Mainimg" alt="" /></div>
 <div className="small-img-group">
     <div className="small-img-col">
       
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/kutha_Mens1.jpeg`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/kutha_Mens1.jpeg`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/kutha_Mens1.jpeg`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
-    {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/kutha_Mens1.jpeg`} alt="" />)}
+    {mainproducts.length > 1 && (               
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
     </div>
 </div>
 </div> 
