@@ -75,7 +75,7 @@ export const removeFromCart = (productId, userid) => async (dispatch, getState) 
 
     try {
         dispatch({ type:CART_REMOVE_REQUEST })
-        const response = await axios.delete(`http://localhost:8000/api/users/addcartdata/${userid}/${productId}`);
+        const response = await axios.delete(`https://teskoodude.pythonanywhere.com/api/users/addcartdata/${userid}/${productId}`);
         if (response.status === 204) {
          
         }
