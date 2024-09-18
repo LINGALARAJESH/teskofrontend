@@ -73,19 +73,19 @@ console.log(mainproducts)
     <div className="small-img-col">
       
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[1].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[2].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[3].image}`} alt="" />)}
     </div>
     <div className="small-img-col">
     {mainproducts.length > 1 && (               
-  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[0].image}`} alt="" />)}
+  <img className="small-img" width="100%" src={`https://teskoodude.pythonanywhere.com/static/images/${mainproducts[4].image}`} alt="" />)}
     </div>
 </div>
 </div> 
