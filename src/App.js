@@ -13,6 +13,7 @@ import MyOrder from './Pages/MyOrder/MyOrder';
 import Contactdata from './Pages/Contactdata/Contactdata';
 import Reset from './Components/Reset/Reset';
 import PasswordReset from './Components/PasswordReset/PasswordReset';
+import Aboutus from './Components/About/Aboutus';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/paypal-cancel" element={<Home />} />
           <Route path="/contact" element={<Contactdata />} />
           <Route path="/reset" element={<Reset/>} />
+          <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/api/users/set-new-password/:uidb64/:token" element={<PasswordReset/>} />
         </Routes>
       </HashRouter>

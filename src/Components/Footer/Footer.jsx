@@ -2,7 +2,7 @@ import React from 'react'
 import "./Footer.css"
 const Footer = () => {
   return (
-<section className="footer" id="aboutus">
+<section className="footer" >
   <div className="box-container">
     <div className="box">
       <h3>About us</h3>
