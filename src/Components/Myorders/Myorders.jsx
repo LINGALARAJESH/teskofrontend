@@ -132,7 +132,7 @@ const Myorders = () => {
                 {safeParse(item.cartItems).map((dataitem) => (
                   <div className="productdetail1" key={dataitem._id}>
                     <div className="productimage1">
-                      <img src={`https://teskoodude.pythonanywhere.com/${dataitem.image}`} alt="" />
+                      <img src={`https://teskoodude.pythonanywhere.com/static/images/${dataitem.image}`} alt="" />
                     </div>
                     <div className="productdata">
                       <ul>
