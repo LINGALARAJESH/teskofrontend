@@ -6,9 +6,6 @@ import RazorayPay from "../../Components/RazorayPay/RazorayPay"
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 
-
-
-
 const Payment = () => {
 
   const [colldata, setColldata] = useState(true);
@@ -135,9 +132,6 @@ const Payment = () => {
               </tr>
             </tbody>
           </table>
-         
-         
-          
         </div>
       </section>
     </>

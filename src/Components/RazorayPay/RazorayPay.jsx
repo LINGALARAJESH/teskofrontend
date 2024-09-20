@@ -178,7 +178,7 @@ const RazorayPay = () => {
        "handler": function (response){
         razorpayPaymentComplete(amount_price,response.razorpay_payment_id,response.razorpay_order_id,response.razorpay_signature,userInfo.id,orderalldata[orderalldata.length -1]._id)
         const data=OrderCompleted(amount_price,response.razorpay_payment_id,response.razorpay_order_id,response.razorpay_signature,userInfo.id,orderalldata[orderalldata.length -1]._id)
-        console.log(data,"HEEEEEEESS")
+        setTimeout(()=>{ navigate("/myorders")},2000)
       },
         'prefill': {
           name: userInfo.username,
@@ -205,7 +205,7 @@ const RazorayPay = () => {
           setError(`Error: ${error.response ? error.response.data.message : error.message} - Payment Limit is only 50,0000/- only`);
     }
   };
-  navigate("/myorders")
+  
   
   return (
     <>
