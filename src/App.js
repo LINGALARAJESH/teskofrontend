@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "../src/Pages/Home/Home"
 import Products from "../src/Pages/Products/Products"
 import Navbar from './Components/Navbar/Navbar';
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
    
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <br />
         <br />
@@ -41,7 +41,7 @@ function App() {
           <Route path="/reset" element={<Reset/>} />
           <Route path="/api/users/set-new-password/:uidb64/:token" element={<PasswordReset/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
       <Footer />
     </>
