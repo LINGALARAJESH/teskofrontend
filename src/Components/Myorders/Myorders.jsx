@@ -28,7 +28,7 @@ const Myorders = () => {
       getOrdersData(userInfo);
     };
     const timer = setTimeout(fetchData,2000);
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer) ;
   }, [userInfo]);
 
   
