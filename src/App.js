@@ -15,7 +15,9 @@ import Reset from './Components/Reset/Reset';
 import PasswordReset from './Components/PasswordReset/PasswordReset';
 
 function App() {
-
+  
+  console.log(window.location)
+  
   return (
     <>
    
