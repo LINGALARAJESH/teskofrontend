@@ -24,7 +24,7 @@ function App() {
         <Navbar />
         <br />
         <br />
-        <Routes>
+        <Routes basename="/teskofrontend">
           <Route path="/" element={<Home />} />
           <Route path="/teskofrontend/" element={<Home />} />
           <Route path="/products" element={<Products />} />
