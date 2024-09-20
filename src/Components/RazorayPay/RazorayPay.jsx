@@ -178,7 +178,7 @@ const RazorayPay = () => {
        "handler": function (response){
         razorpayPaymentComplete(amount_price,response.razorpay_payment_id,response.razorpay_order_id,response.razorpay_signature,userInfo.id,orderalldata[orderalldata.length -1]._id)
         const data=OrderCompleted(amount_price,response.razorpay_payment_id,response.razorpay_order_id,response.razorpay_signature,userInfo.id,orderalldata[orderalldata.length -1]._id)
-        console.log(data)
+        console.log(data,"HEEEEEEESS")
         navigate("/myorders")
       },
         'prefill': {
