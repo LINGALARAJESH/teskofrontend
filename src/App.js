@@ -25,6 +25,7 @@ function App() {
         <br />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/teskofrontend/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/myorders" element={<MyOrder />} />
           <Route path="/cart/:id?" element={<Cart/>} />
