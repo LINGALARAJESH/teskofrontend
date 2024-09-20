@@ -25,21 +25,21 @@ function App() {
         <br />
         <br />
         <Routes >
-          <Route basename="/" path="/" element={<Home />} />
-          <Route basename="/teskofrontend" path="/teskofrontend/" element={<Home />} />
-          <Route basename="/products" path="/products" element={<Products />} />
-          <Route basename="/myorders" path="/myorders" element={<MyOrder />} />
-          <Route basename="/cart/:id?" path="/cart/:id?" element={<Cart/>} />
-          <Route basename="/products/:data" path="/products/:data" element={<Products />} />
-          <Route basename="/displayproduct/:id" path="/displayproduct/:id" element={<Displayproduct />} />
-          <Route basename="/login" path="/login" element={<Login/>} />
-          <Route basename="/signup" path="/signup" element={<Signup/>} />
-          <Route basename="/Payment" path="/Payment" element={<Payment/>} />
-          <Route basename="/paypal-success" path="/paypal-success" element={<Home />} />
-          <Route basename="/paypal-cancel" path="/paypal-cancel" element={<Home />} />
-          <Route basename="/contact" path="/contact" element={<Contactdata />} />
-          <Route basename="/reset" path="/reset" element={<Reset/>} />
-          <Route basename="/api/users/set-new-password/:uidb64/:token" path="/api/users/set-new-password/:uidb64/:token" element={<PasswordReset/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/teskofrontend/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/myorders" element={<MyOrder />} />
+          <Route path="/cart/:id?" element={<Cart/>} />
+          <Route path="/products/:data" element={<Products />} />
+          <Route path="/displayproduct/:id" element={<Displayproduct />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<Signup/>} />
+          <Route path="/Payment" element={<Payment/>} />
+          <Route path="/paypal-success" element={<Home />} />
+          <Route path="/paypal-cancel" element={<Home />} />
+          <Route path="/contact" element={<Contactdata />} />
+          <Route path="/reset" element={<Reset/>} />
+          <Route path="/api/users/set-new-password/:uidb64/:token" element={<PasswordReset/>} />
         </Routes>
       </BrowserRouter>
 
