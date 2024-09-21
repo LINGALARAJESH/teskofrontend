@@ -24,7 +24,6 @@ const Payment = () => {
       <section id="cart" className="section-p1">
         <h3>₹-Conform Payment & Place Order </h3>
         <table style={{ width: "100%" }}>
-        
 
           <thead>
         
@@ -124,9 +123,10 @@ const Payment = () => {
             </td>
           ) : (
             <td colSpan="2">
-              <PayPalScriptProvider options={{ 'client-id': 'AStB8bAEocAqPjPqxp8DyC00ZVTOpUXFf1D2jXORkSlh1QYE2RjQUEYS_f-KrYEmuNRmbVroG4XJRGPj' }}>
+              {/* <PayPalScriptProvider options={{ 'client-id': 'AStB8bAEocAqPjPqxp8DyC00ZVTOpUXFf1D2jXORkSlh1QYE2RjQUEYS_f-KrYEmuNRmbVroG4XJRGPj' }}>
                 <PayPalButtons />
-              </PayPalScriptProvider>
+              </PayPalScriptProvider> */}
+              <p>hahahah</p>
             </td>
           )}
               </tr>
