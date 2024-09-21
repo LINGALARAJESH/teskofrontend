@@ -76,7 +76,7 @@ const showPassword=()=>{
         <div className='loginsignup-header'>
         <h1>Signup</h1>
         </div>
-{error && <Alert className='errormsg' variant="danger">{error}</Alert>}
+{error && <Alert className='errormsg' variant="primary">{error}</Alert>}
 {message && !error && <Alert className='errormsg' variant="danger">{message}</Alert>}
       {loading && <Loader/>}
  

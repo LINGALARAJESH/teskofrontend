@@ -22,7 +22,9 @@ const PasswordReset = () => {
   const token = window.location.pathname
     && window.location.pathname.split("/")[5]
 
-
+  console.log(window.location.pathname.split("/"))
+  console.log(uidb64)
+  console.log(token)
 
   useEffect(()=>{
      

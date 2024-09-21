@@ -123,10 +123,11 @@ const Payment = () => {
             </td>
           ) : (
             <td colSpan="2">
-              {/* <PayPalScriptProvider options={{ 'client-id': 'AStB8bAEocAqPjPqxp8DyC00ZVTOpUXFf1D2jXORkSlh1QYE2RjQUEYS_f-KrYEmuNRmbVroG4XJRGPj' }}>
+              <p></p>
+              <PayPalScriptProvider options={{ 'client-id': 'AStB8bAEocAqPjPqxp8DyC00ZVTOpUXFf1D2jXORkSlh1QYE2RjQUEYS_f-KrYEmuNRmbVroG4XJRGPj' }}>
                 <PayPalButtons />
-              </PayPalScriptProvider> */}
-              <p>hahahah</p>
+              </PayPalScriptProvider>
+              <p style={{color:"red"}}>Paypal is under development process.....</p>
             </td>
           )}
               </tr>
