@@ -18,12 +18,10 @@ const PasswordReset = () => {
   const {error,loading,userInfo}=userRegister 
 
   const uidb64= window.location.pathname
-    && window.location.pathname.split("/")[4]
+    && window.location.hash.split("/")[4]
   const token = window.location.pathname
-    && window.location.pathname.split("/")[5]
+    && window.location.hash.split("/")[5]
 
-  console.log(window.location)
-  console.log(window.location.pathname.split("/"))
   console.log(uidb64)
   console.log(token)
 
